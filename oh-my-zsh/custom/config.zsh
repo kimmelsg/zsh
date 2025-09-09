@@ -39,6 +39,7 @@
     alias show_options='shopt'                  # Show_options: display bash options settings
     alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
     alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
+    alias k='nocorrect kubectl'
     mkcd () { mkdir -p "$1" && cd "$1"; }       # mcd:          Makes new Dir and jumps inside
 
 
@@ -225,7 +226,7 @@
     
     # SSL Management
     certinfo () { openssl x509 -in "$1" -noout -text; }
-    csr () { openssl req -new -newkey rsa:2048 -nodes -keyout "$1".key -out "$1".csr; }
+    csr () { openssl req -new -newkey rsa:4096 -nodes -keyout "$1".key -out "$1".csr; }
     cabundle() { cat "$1".crt > "$1"-bundle.crt && cat "$1".ca >> "$1"-bundle.crt}
 
 #   ---------------------------------------
