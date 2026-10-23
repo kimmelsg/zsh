@@ -39,6 +39,7 @@ Run the following command in the terminal to install it:
 - Download [`Meslo LG L DZ Regular Nerd Font Complete.otf`](https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Meslo/L-DZ/complete/Meslo%20LG%20L%20DZ%20Regular%20Nerd%20Font%20Complete.otf) and install it.
 - Then go to _iTerm2 > Preferences > Profiles > Text_ and open _Change Font_
 - and select _Meslo LG L DZ Regular Nerd Font Complete_ font at 14pt.
+- CORRECTION brew install --cask font-meslo-lg-nerd-font
 
 ![](https://github.com/jacobhaug/zsh/blob/master/images/iterm2/06-font-preferences.png?raw=true)
 
